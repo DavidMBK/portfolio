@@ -1,7 +1,8 @@
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/all";
-import { TiLocationArrow } from "react-icons/ti";
+import { MdOutlineKeyboardArrowRight } from "react-icons/md";
+
 import { useEffect, useRef, useState } from "react";
 
 import Button from "./Button";
@@ -79,7 +80,7 @@ const Hero = () => {
     });
   });
 
-  const getVideoSrc = (index) => `videos/hero-${index}.mp4`;
+  const getVideoSrc = (index) => `videos/${index}.mp4`;
 
   return (
     <div className="relative h-dvh w-screen overflow-x-hidden">
@@ -152,9 +153,9 @@ const Hero = () => {
             </p>
 
             <Button
-              id="watch-trailer"
-              title="Watch trailer"
-              leftIcon={<TiLocationArrow />}
+              id="Linkedin"
+              title="Linkedin"
+              leftIcon={<MdOutlineKeyboardArrowRight/>}
               containerClass="bg-yellow-300 flex-center gap-1"
             />
           </div>
